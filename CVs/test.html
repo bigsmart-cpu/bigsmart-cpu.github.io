@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>建设中</title>
     <link rel="stylesheet" href="./css/root.css" style="text/css">
@@ -19,10 +20,46 @@
             local 背景图片会随着元素内容的滚动而滚动。*/
         background-attachment: scroll;
       }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .shell{
+          height: 100vh;
+          overflow-x: hidden;
+          perspective: 3px;
+      }
+      .shell div{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-style: 30px;
+          letter-spacing: 2px;
+      }
+      .image{
+          transform: translateZ(-1px) scale(1.6);
+          background-size: cover;
+          height: 100vh;
+          z-index: -1;
+      }
+      .text{
+          height: 50vh;
+          background-color: black
+      }
+      .text h1{
+          color: #fff;
+      }
+      .heading{
+          z-index: -1;
+          transform: translateY(-30vh) translateZ(1px);
+          color: #fff;
+          font-size: 30px;
+      }
     </style>
   </head>
   <body>
-    <audio id="music" src="./music/库国晚.mp3" loop autoplay></audio>
+    <audio id="music" src="./music/HK.mp3" loop autoplay></audio>
     <nav class="navbar bg-body-black fixed-top" style="z-index:999">
       <div class="container-fluid">
         <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -74,6 +111,55 @@
         <div class="col">
         </div>
       </div>
+    </div>
+    <div class="shell">
+        <div class="image" style="background-image: url('./img/bg/HK1.jpg');"></div>
+        <div class="heading">
+            <h1>你来到了德特茅斯，圣巢之旅的起点</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK2.jpg');"></div>
+        <div class="heading">
+            <h1>你击败了格罗姆之母</h1>
+        </div>
+        <div class="text">
+        </div>
+
+        <div class="image" style="background-image: url('./img/bg/HK3.jpg');"></div>
+        <div class="heading">
+            <h1>你来到了泪之城，圣巢的中心</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK4.jpg');"></div>
+        <div class="heading">
+            <h1>你击败了螳螂领主，拿到了强者的证明</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK5.jpg');"></div>
+        <div class="heading">
+            <h1>你见到了白色夫人，初窥王国覆灭的真相</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK6.jpg');"></div>
+        <div class="heading">
+            <h1>你身经百战，得到了骨钉大师的认可。</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK7.jpg');"></div>
+        <div class="heading">
+            <h1>和提索一起找到了愚人竞技场，证明实力的时候到了</h1>
+        </div>
+        <div class="text">
+        </div>
+        <div class="image" style="background-image: url('./img/bg/HK8.jpg');"></div>
+        <div class="heading">
+            <h1>你击败了竞技场冠军，成为了新的冠军</h1>
+        </div>
     </div>
     <div class="position-fixed bottom-0 end-0 music_play">
       <img id='musicImg' src="img/icon_queue_play.png" onClick="play()" alt="user">
