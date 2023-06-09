@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.homeContent_controller {
+  top: 20px;
+  position:relative;
+}
+
+.controller {
+  padding-top: 100px
+}
+
+.leftHand {
+  padding-top: 100px;
+}
+
+.rightHand {
+  padding-top:  100px;
+}
+
+.homeText {
+  padding-top: 50px;
+  font-size: 70px;
+  color:#FFBB66 ;
+}
+.mainText {
+  font-size: 20px
+}
+.protect_Text {
+  padding-top: 30px;
+  font-size: 15px
+}
+
+.controller:hover img{
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.music_play:hover img{
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    transform:scale(1.1);
+}
+
+.nav_cornerSplat__cXcg7 {
+height: auto;
+left: 0;
+position: absolute;
+top: 0;
+width: 17%
+white-space:nowrap;
+}
+
+.year_text {
+  padding-top: 50px;
+  font-size: 70px;
+  color:#FFBB66 ;
+}
+
+.game_slide{
+  top:70px;
+}
+
+.game_card {
+  width: 30rem;
+  z-index: 0
+}
+
+.game_card img {
+}
+
+.mybtn {
+  background: transparent;
+  border:2px solid purple;
+  color: purple;
+  padding: 10px 20px;
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+}
+.mybtn::before {
+  content:"";
+  display: block;
+  width:0%;
+  height: 100%;
+  background: purple;
+  position: absolute;
+  top:0;
+  left: 0;
+  transform:skewX(45deg);
+  transition: all 1s;
+  z-index:-1;
+  left: -20px
+}
+.mybtn:hover::before {
+  width: 150%;
+}
+.mybtn:hover {
+  transition: color 1s;
+  color: white;
+}
+.card-content {
+  padding-top: 10px;
+  padding-bottom: 10px
+}

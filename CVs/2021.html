@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2021</title>
+    <link rel="stylesheet" href="./css/root.css" style="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style type="text/css">
+      body {
+        background:url("./img/camo-black-2x.png") no-repeat center center;
+        background-color : black;
+      }
+    </style>
+  </head>
+  <body>
+    <audio id="music" src="./music/库国晚.mp3" loop autoplay></audio>
+    <nav class="navbar bg-body-black fixed-top" style="z-index:999">
+      <div class="container-fluid">
+        <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-warning-subtle" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Bigsmart</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Your Game Year
+                </a>
+                <ul class="dropdown-menu bg-warning-subtle">
+                  <li><a class="dropdown-item active">2021</a></li>
+                  <li><a class="dropdown-item" href="2022.html">2022</a></li>
+                  <li><a class="dropdown-item" href="2023.html">2023</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item disabled"  href="#">Waiting for more</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="position-fixed top-0 end-0" style="z-index:999">
+      <img src="./img/bigsmart.jpg" alt="">
+    </div>
+    <div class="fixed-top container-fluid bg-black text-white text-center" style="z-index:998">
+      <div class="row">
+        <div class="col">
+          <svg class="nav_cornerSplat__cXcg7" xmlns="http://www.w3.org/2000/svg" width="226" height="138" viewBox="0 0 226 138">
+            <path fill-rule="evenodd" d="M0,76.3515281 C4.72248572,74.7212575 12.0010363,76.6320718 14.737896,81.3919634 C21.8013631,93.6673091 6.44938808,110.867755 12.5995295,121.562705 C16.6019531,128.523306 25.585586,128.183536 27.7021324,118.018503 C29.2045998,110.799178 19.3107584,91.7564947 26.2962967,81.4200178 C29.659704,76.4450427 37.2562041,76.7661094 41.3926652,83.390058 C45.4761347,89.9329607 54.3600187,86.460453 52.5458361,77.966213 C51.8382425,74.6651488 53.1318607,71.6726826 55.3855619,69.8086255 C57.3368992,68.3996727 59.4440941,67.7232506 61.4795946,67.8884597 C61.5014146,67.8915768 61.5263519,67.8884597 61.5512891,67.8915768 C67.813648,68.4557814 73.340359,76.9469042 71.3516159,96.1984368 C70.064232,108.682632 63.7270614,115.194363 66.7039418,128.682281 C69.3472869,140.649028 80.0141821,141.487542 84.7460193,128.875544 C88.6237567,118.539067 84.0415428,105.372216 82.8102677,95.6030607 C79.7367555,71.1739382 97.8692304,66.2550719 108.822904,70.1889181 C118.931828,73.8204005 115.686873,82.592067 121.141889,86.1362692 C126.989667,89.9360778 135.212715,83.040937 127.020839,72.9663008 C121.603228,66.3080635 125.870609,55.0582609 134.433427,57.8169406 C146.95191,61.8505357 151.668162,54.0483035 150.879522,46.9661335 C150.165694,40.5666199 154.97546,33.8304538 167.578107,42.2249449 C179.105336,49.902491 186.134515,32.2531747 174.130361,27.4028858 C159.526503,21.5021165 156.746003,5.67633432 180.514289,6.26859325 C186.48987,6.41821656 205.036926,11.3464343 215.326646,9.69122646 C223.219275,8.41942833 226.314608,4.12399248 225.669357,0 L0,0 L0,76.3515281 Z">
+            </path>
+          </svg>
+        </div>
+        <div class="col" style="z-index:999">
+          <p class="h4">Bigsmart</p>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+    </div>
+  <div class="container text-center text-white">
+    <div class="row year_text">
+      <p>2021年你游玩的游戏</p>
+    </div>
+  </div>
+  <div id="carouselExample" class="carousel slide text-center game_slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card game_card bg-light mx-auto ">
+          <img src="img/header/367520_header.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title"><b>空洞骑士</b></h3>
+            <p class="card-text card-content h5">你是容器,你是空洞骑士。</p>
+            <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+          </div>
+        </div>
+      </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto">
+      <img src="img/header/379430_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>天国：拯救</b></h3>
+        <p class="card-text card-content h5">你是亨利，一位铁匠的儿子.</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto">
+      <img src="img/header/292030_header_schinese.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>巫师3：狂猎</b></h3>
+        <p class="card-text card-content h5">钢剑诸恶，银剑斩魔。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/460950_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>武士：零</b></h3>
+        <p class="card-text card-content h5">你是零，一位武士。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/646570_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>杀戮尖塔</b></h3>
+        <p class="card-text card-content h5">你是战士，往上爬。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/243470_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>看门狗</b></h3>
+        <p class="card-text card-content h5">你是艾登，私法制裁者。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/1057090_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>奥日与精灵意志</b></h3>
+        <p class="card-text card-content h5">你是ori，萤火的意志。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/391220_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>古墓丽影</b></h3>
+        <p class="card-text card-content h5">你是劳拉，考古学家。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/205100_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>耻辱</b></h3>
+        <p class="card-text card-content h5">你是科尔沃，暗杀者。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/381210_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>黎明杀机</b></h3>
+        <p class="card-text card-content h5">你是屠夫，也是鱼肉。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/701160_header_schinese.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>王国：两位君主</b></h3>
+        <p class="card-text card-content h5">你是国王，重建废土。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/638230_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>风之旅人</b></h3>
+        <p class="card-text card-content h5">你是旅者，沿途跋涉。</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/400_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>传送门</b></h3>
+        <p class="card-text card-content h5">你是雪儿，逃离实验室</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/620_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>传送门2</b></h3>
+        <p class="card-text card-content h5">你是机器人，完成实验</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="card game_card bg-light mx-auto" >
+      <img src="img/header/374320_header.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="card-title"><b>黑暗之魂3</b></h3>
+        <p class="card-text card-content h5">你是不死人，传递火种</p>
+        <a href="test.html"><button class="mybtn rounded">开始回忆</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="z-index:0">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="z-index:0">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div>
+  <div class="position-fixed bottom-0 end-0 music_play">
+    <img id='musicImg' src="img/icon_queue_play.png" onClick="play()" alt="user">
+  </div>
+  <script type="text/javascript">
+      window.onload = function(){
+         var audio = document.getElementById('music');
+             audio.pause();//打开页面时无音乐
+      }
+      function play() {
+        var audio = document.getElementById('music');
+        if (audio.paused) {
+            audio.play();
+            document.getElementById('musicImg').src="img/icon_queue_pause.png";
+        }else{
+            audio.pause();
+            audio.currentTime = 0;//音乐从头播放
+            document.getElementById('musicImg').src="img/icon_queue_play.png";
+        }
+      }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
